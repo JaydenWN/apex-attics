@@ -1,0 +1,21 @@
+---
+import AboutAreas from "../components/About/About_Areas.astro";
+import AboutUs from "../components/About/About_Us.astro";
+import AboutWhat from "../components/About/About_What.astro";
+import AboutContact from "../components/About/About_Contact.astro";
+import AboutWhy from "../components/About/About_Why.astro";
+import SubHero from "../components/common/SubHero.astro";
+import Layout from "../layouts/Base_Layout.astro";
+---
+
+<Layout title="About Me" description="Lorem ipsum dolor sit amet">
+	<SubHero
+		title="About Apex Attics, The Central Coast Attic Storage Specialists"
+		text="At Apex Attics, we help homeowners unlock the full potential of their roof space with safe, secure and functional attic storage conversions. Our team delivers honest advice, professional service and long-term value with every project. From free on-site assessments to same-day installations, we make attic storage simple, affordable and built to last."
+	/>
+	<AboutUs />
+	<AboutAreas />
+	<AboutWhy />
+	<AboutWhat />
+	<AboutContact />
+</Layout>

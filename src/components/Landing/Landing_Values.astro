@@ -1,0 +1,120 @@
+---
+import { Image } from "astro:assets";
+import placeholder from "../../../public/placeholder.svg";
+import value1 from "@icons/value-1.svg";
+import value2 from "@icons/value-2.svg";
+import value3 from "@icons/value-3.svg";
+---
+
+<section>
+    <div class="container">
+        <h2>Our Values at Apex Attics</h2>
+        <div class="values">
+            <div class="value">
+                <Image src={value1} alt="" class="value-image" />
+                <h3>Honest Advice</h3>
+                <p>
+                    We give practical, no-pressure advice based on what your
+                    home actually needs. If an attic conversion isn’t the right
+                    fit, we’ll tell you.
+                </p>
+            </div>
+
+            <div class="value">
+                <Image src={value2} alt="" class="value-image" />
+                <h3>Transparent Service</h3>
+                <p>
+                    From pricing to installation, we keep things clear. No
+                    hidden fees, no unexpected surprises. Just quality work you
+                    can trust.
+                </p>
+            </div>
+
+            <div class="value">
+                <Image src={value3} alt="" class="value-image" />
+                <h3>Built for Long-Term Use</h3>
+                <p>
+                    We use durable materials and proven techniques to create
+                    attic storage that lasts. Safety and functionality are at
+                    the core of every project.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    h2 {
+        text-align: center;
+    }
+
+    .value {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .value p {
+        width: 80%;
+    }
+    .value-image {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+    }
+    .values {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+    }
+    @media (min-width: 768px) {
+        .value p {
+            grid-area: value-text;
+            width: 380px;
+        }
+        h3 {
+            grid-area: title;
+        }
+        .value-image {
+            width: 100px;
+            height: 100px;
+            grid-area: image;
+            margin-right: 1rem;
+        }
+        .value {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-areas:
+                "image title"
+                "image value-text";
+            text-align: left;
+        }
+        .values {
+            gap: 6rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .value {
+            width: calc(50% - 2rem);
+            box-sizing: border-box;
+        }
+        .value p {
+            width: auto;
+        }
+        .values {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 4rem;
+        }
+        .container {
+            gap: 6rem;
+        }
+    }
+</style>

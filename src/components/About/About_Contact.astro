@@ -1,0 +1,93 @@
+---
+import ContactForm from "../common/Contact_Form.astro";
+---
+
+<section>
+    <div class="container">
+        <div class="contact-head">
+            <h2>
+                Get in Touch with the Central Coast Attic Storage Specialists
+            </h2>
+        </div>
+        <div class="form">
+            <ContactForm />
+        </div>
+
+        <div class="contact-information">
+            <div class="info-header">
+                <h3>Rather Contact Us Directly?</h3>
+                <p>
+                    Get in touch via phone, email, or by submitting the form.
+                    We’ll reply quickly with a clear quote, honest advice, and
+                    answers to all your questions.
+                </p>
+            </div>
+
+            <div class="info">
+                <h4>Call us</h4>
+                <a href="tel:">0424 808 378</a>
+            </div>
+
+            <div class="info">
+                <h4>Send us an Email</h4>
+                <a href="mailto:">info@apexattics.com</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .contact-information {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .info-header {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    @media (min-width: 768px) {
+        .contact-head {
+            grid-area: contact-head;
+        }
+        .form {
+            grid-area: form;
+        }
+        .contact-information {
+            grid-area: info;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "contact-head form"
+                "info form";
+            gap: 1rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            gap: 6rem;
+        }
+        .form {
+            max-width: 440px;
+        }
+    }
+</style>

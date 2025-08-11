@@ -1,0 +1,47 @@
+---
+import ServicesWhyDropdowns from "./Services_Why_Dropdowns.astro";
+const whyObject = [
+    {
+        q: "Use Your Roof Space Wisely",
+        a: "Turn wasted roof space into a secure and organised area to store boxes, seasonal items, decorations, luggage and more.",
+    },
+    {
+        q: "Access Your Belongings Anytime",
+        a: "No more driving to storage units or digging through the garage. Your possessions are stored safely under your roof and available 24/7.",
+    },
+    {
+        q: "Declutter and Reclaim Your Living Space",
+        a: "Free up floors, spare rooms or garages by moving items into the attic. A clutter-free home is safer, easier to clean and more enjoyable to live in.",
+    },
+    {
+        q: "Increase Property Value",
+        a: "Attic storage is a great selling point. It adds functionality to your home and appeals to future buyers looking for more space.",
+    },
+    {
+        q: "Save Money Long-Term",
+        a: "Avoid paying for monthly storage units or building costly sheds. A one-time investment in your attic gives you permanent, accessible storage.",
+    },
+];
+---
+
+<section>
+    <div class="container">
+        <h2>Why Add Attic Storage to Your Home</h2>
+        <p>
+            An attic storage conversion is one of the smartest ways to increase
+            usable space without extending or renovating. It’s practical,
+            affordable and adds long-term value to your property. Use Your Roof
+            Space Wisely
+        </p>
+
+        <ServicesWhyDropdowns whyObject={whyObject} />
+    </div>
+</section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+</style>

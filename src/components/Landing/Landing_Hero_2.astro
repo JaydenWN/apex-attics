@@ -1,0 +1,95 @@
+---
+import { Image } from "astro:assets";
+import Button from "../common/Button.astro";
+import heroImage from "@images/apex-attics-central-coast-hero.png";
+import PhoneIcon from "@icons/call-white.svg";
+import MessageIcon from "@icons/contact-white.svg";
+---
+
+<header>
+    <div class="container">
+        <h1>Central Coast’s Trusted Attic Conversion Specialists</h1>
+        <Image src={heroImage} alt="" class="hero-image" />
+        <p>
+            Maximise your living space without the expense of a storage unit.
+            Our attic storage conversions offer a <strong>practical</strong> and
+            <strong>budget-friendly solution</strong> for secure, accessible storage.
+            Keep your belongings safe, enjoy easy access whenever you need, and boost
+            the long-term value of your home.
+        </p>
+        <div class="cta-buttons">
+            <Button type="secondary" href="/"><PhoneIcon /> Call Us</Button>
+            <Button type="primary" href="/"><MessageIcon /> Get a quote</Button>
+        </div>
+    </div>
+</header>
+
+<style>
+    header {
+        background-color: var(--blue);
+        color: white;
+    }
+    .hero-image {
+        width: 90%;
+        margin: 0px auto;
+        height: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    h1 {
+        font-size: 2.25em;
+        color: white;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "heading heading"
+                "text-content image"
+                "buttons image";
+        }
+        h1 {
+            grid-area: heading;
+            font-size: 3em;
+        }
+        p {
+            grid-area: text-content;
+        }
+        .cta-buttons {
+            grid-area: buttons;
+            margin-top: auto;
+        }
+        .hero-image {
+            grid-area: image;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            grid-template-areas:
+                "image heading"
+                "image text-content"
+                "image buttons";
+            padding: 0px;
+        }
+        h1 {
+            padding-top: 4rem;
+        }
+        .cta-buttons {
+            padding-bottom: 2rem;
+        }
+    }
+</style>

@@ -1,0 +1,21 @@
+---
+import SubHero from "../components/common/SubHero.astro";
+import Layout from "../layouts/Base_Layout.astro";
+import ServicesIncluded from "../components/Services/Services_Included.astro";
+import ServicesHow from "../components/Services/Services_How.astro";
+import ServicesWhy from "../components/Services/Services_Why.astro";
+import ServicesWhyAttic from "../components/Services/Services_Why_Attic.astro";
+import ServicesContact from "../components/Services/Services_Contact.astro";
+---
+
+<Layout title="About Me" description="Lorem ipsum dolor sit amet">
+    <SubHero
+        title="Attic Storage Conversions for Central Coast Homes"
+        text="Our attic storage service is a complete, all-in-one solution designed to make the most of your space. We handle everything from access to installation, so you don’t have to lift a finger."
+    />
+    <ServicesIncluded />
+    <ServicesHow />
+    <ServicesWhy />
+    <ServicesWhyAttic />
+    <ServicesContact />
+</Layout>

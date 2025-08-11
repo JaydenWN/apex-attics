@@ -1,0 +1,43 @@
+---
+interface Props {
+    type: "primary" | "secondary" | "secondary-dark";
+    href: String;
+}
+const { type = "primary", href } = Astro.props;
+
+const className = `btn btn-${type}`;
+---
+
+<a href={href} class={className}>
+    <slot />
+</a>
+
+<style>
+    .btn {
+        display: flex;
+        gap: 1rem;
+        border-radius: 8px;
+        padding: 0.35rem 1.2rem 0.35rem 0.55rem;
+        color: white;
+        font-weight: 400;
+        text-decoration: none;
+        box-shadow: var(--box-shadow);
+        font-size: 1em;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .btn-primary {
+        box-shadow: var(--box-shadow);
+        background-color: var(--orange);
+        border: 2px solid var(--orange);
+    }
+
+    .btn-secondary {
+        border: 2px solid var(--orange);
+    }
+    .btn-secondary-dark {
+        border: 2px solid var(--blue);
+        color: var(--blue);
+    }
+</style>

@@ -1,0 +1,109 @@
+---
+import ValueIcon1 from "@icons/value-1.svg";
+import ValueIcon2 from "@icons/value-2.svg";
+import ValueIcon3 from "@icons/value-3.svg";
+---
+
+<section>
+    <div class="container">
+        <div class="why-header">
+            <h2>Why Choose Apex Attics For Your Attic Conversion</h2>
+        </div>
+
+        <div class="reasons">
+            <div class="reason">
+                <ValueIcon1 />
+                <h3>Honest Advice</h3>
+                <p>
+                    We give practical, no-pressure advice based on what your
+                    home actually needs. If an attic conversion isn’t the right
+                    fit, we’ll tell you.
+                </p>
+            </div>
+
+            <div class="reason">
+                <ValueIcon2 />
+                <h3>Transparent Service</h3>
+                <p>
+                    From pricing to installation, we keep things clear. No
+                    hidden fees, no unexpected surprises. Just quality work you
+                    can trust.
+                </p>
+            </div>
+
+            <div class="reason">
+                <ValueIcon3 />
+                <h3>Built for Long-Term Use</h3>
+                <p>
+                    We use durable materials and proven techniques to create
+                    attic storage that lasts. Safety and functionality are at
+                    the core of every project.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    h2 {
+        text-align: center;
+    }
+    .why-header {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .reasons {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 4rem;
+    }
+    .reason {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .reason {
+            width: calc(50% - 2rem);
+            box-sizing: border-box;
+        }
+        .reasons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 4rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            display: grid;
+            grid-template-columns: 0.65fr 1fr;
+            grid-template-areas: "why-header reasons";
+            gap: 3rem;
+        }
+        .why-header {
+            grid-area: why-header;
+        }
+        .reasons {
+            grid-area: reasons;
+            gap: 4rem;
+            margin-top: 0px;
+        }
+    }
+</style>

@@ -1,0 +1,72 @@
+---
+import FAQ from "../common/FAQ.astro";
+
+const qaObject = [
+    {
+        q: "How long does an attic storage conversion take?",
+        a: "Most attic conversions are completed in just one day. Our team works efficiently to deliver high-quality results with minimal disruption to your home.",
+    },
+    {
+        q: "Is my attic suitable for a storage conversion?",
+        a: "We offer a free on-site assessment to inspect your roof space and determine if it's suitable for a safe and effective attic storage conversion. We also answer any specific questions during the visit.",
+    },
+    {
+        q: "What is included in your attic storage service?",
+        a: "Our complete attic storage package includes design, professional installation, secure attic ladder access, thorough clean-up, and a 5-year workmanship guarantee.",
+    },
+    {
+        q: "Am I obligated to proceed after receiving a quote?",
+        a: "Not at all. Our quotes and site assessments are completely free and come with no obligation to go ahead.",
+    },
+    {
+        q: "Do you offer same-day attic conversions?",
+        a: "Yes. Unlike many others, we can complete your attic installation on the same day as your free on-site inspection if you're happy to proceed.",
+    },
+    {
+        q: "What is the process for getting attic storage installed?",
+        a: "Start by sending a quote request. We’ll follow up with a call to answer your questions and provide a free online estimate. If you're interested, we’ll schedule your free on-site inspection. If everything checks out and you're ready to go, we can install your attic storage the same day. Prefer to think it over? No problem, we work around your schedule.",
+    },
+    {
+        q: "Is an attic storage conversion affordable?",
+        a: "Yes. Our attic conversions are one of the most affordable long-term storage solutions available. They're cheaper than renting a storage unit or building a shed, and they give you 24/7 access to your items inside your own home.",
+    },
+];
+---
+
+<section class="section-dark">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <FAQ qaObject={qaObject} class="faq" />
+    </div>
+</section>
+
+<style>
+    h2 {
+        font-size: 1.65em;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "title title"
+                "image faq";
+            gap: 2rem;
+        }
+
+        .faq {
+            grid-area: faq;
+        }
+        h2 {
+            grid-area: title;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+</style>

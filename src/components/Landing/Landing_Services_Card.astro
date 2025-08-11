@@ -1,0 +1,55 @@
+---
+import Button from "../common/Button.astro";
+import MessageIcon from "@icons/contact-white.svg";
+
+const { title, text, ctaText } = Astro.props;
+---
+
+<div class="service-card">
+    <h3>{title}</h3>
+    <p>{text}</p>
+    <Button type="primary" href="/contact"><MessageIcon />Get a Quote</Button>
+</div>
+
+<style>
+    .service-card {
+        display: flex;
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+        border: 2px solid var(--orange);
+        flex-direction: column;
+        background-color: white;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .service-card {
+            width: calc(50% - 1rem);
+            box-sizing: border-box;
+        }
+        .text-content {
+            padding: 2rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .service-card {
+            flex-direction: row;
+            width: 100%;
+            max-width: 865px;
+            margin: 0px auto;
+        }
+        .image {
+            height: auto;
+            width: 45%;
+        }
+        .text-content {
+            padding: 3rem;
+        }
+    }
+</style>

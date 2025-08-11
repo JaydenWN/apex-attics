@@ -1,0 +1,17 @@
+---
+import SubHero from "../components/common/SubHero.astro";
+import ContactContactForm from "../components/Contact/Contact_ContactForm.astro";
+import ContactDirect from "../components/Contact/Contact_Direct.astro";
+import ContactSocials from "../components/Contact/Contact_Socials.astro";
+import Layout from "../layouts/Base_Layout.astro";
+---
+
+<Layout title="About Me" description="Lorem ipsum dolor sit amet">
+    <SubHero
+        title="Contact Apex Attics for Attic Storage Conversions on the Central Coast"
+        text="Have questions about attic storage? Want to request a free on-site quote? Our friendly team is here to help. Whether you’re just exploring your options or ready to get started, we’re available to chat, call or visit your property. We proudly service the Central Coast, Newcastle, Sydney and Wollongong regions."
+    />
+    <ContactContactForm />
+    <ContactDirect />
+    <ContactSocials />
+</Layout>

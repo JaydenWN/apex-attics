@@ -1,0 +1,119 @@
+---
+import PhoneIcon from "@icons/phone-orange.svg";
+import EmailIcon from "@icons/email-orange.svg";
+import ClockIcon from "@icons/clock-orange.svg";
+---
+
+<section>
+    <div class="container">
+        <h2>Contact Apex Attics Directly</h2>
+        <p>
+            Prefer to speak with someone right away? You can reach us by phone
+            or email using the details below. Our team is happy to answer any
+            questions, provide attic storage advice, or help you book a free
+            on-site assessment.
+        </p>
+        <div class="list">
+            <div class="card">
+                <div class="card-head">
+                    <PhoneIcon />
+                    <h3>Phone</h3>
+                </div>
+                <a href="tel:0424 808 378">0424 808 378</a>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <EmailIcon />
+                    <h3>Email</h3>
+                </div>
+                <a href="mailto:info@apexattics.com">info@apexattics.com</a>
+            </div>
+        </div>
+
+        <div class="hours">
+            <h2>Our Operating Hours</h2>
+            <div class="list">
+                <div class="hours-card">
+                    <ClockIcon class="clockIcon" />
+                    <h3>Monday - Friday</h3>
+                    <p>7:00am - 5:00pm</p>
+                </div>
+
+                <div class="hours-card">
+                    <ClockIcon class="clockIcon" />
+                    <h3>Saturday</h3>
+                    <p>8:00am - 2:00pm</p>
+                </div>
+
+                <div class="hours-card">
+                    <ClockIcon class="clockIcon" />
+                    <h3>Sunday</h3>
+                    <p>Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+        background-color: var(--blue);
+    }
+    .card-head {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .card-head > h3 {
+        color: white;
+    }
+    .card > a {
+        color: white;
+        text-decoration: none;
+    }
+    .hours-card {
+        grid-template-columns: 30px 1fr;
+        gap: 1rem;
+        align-items: center;
+        display: grid;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+        border: 2px solid var(--orange);
+    }
+
+    .clockIcon {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .hours-card > h3 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .hours-card > p {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .hours {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+</style>

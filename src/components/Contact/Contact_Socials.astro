@@ -1,0 +1,68 @@
+---
+import FacebookIcon from "@icons/facebook-orange.svg";
+import InstagramIcon from "@icons/instagram-orange.svg";
+---
+
+<section class="section-dark">
+    <div class="container">
+        <h2>Stay Connected with Apex Attics</h2>
+        <p>
+            Follow us on social media to see our latest attic storage
+            conversions, customer reviews and behind-the-scenes updates from the
+            team. We share tips, project photos and helpful info for homeowners
+            across the Central Coast and beyond.
+        </p>
+
+        <div class="list">
+            <div class="card">
+                <FacebookIcon />
+                <div class="content">
+                    <h3>Facebook</h3>
+                    <a href="/">Apex Attics</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <InstagramIcon />
+                <div class="content">
+                    <h3>Instagram</h3>
+                    <a href="/">@apexattics</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .card {
+        display: flex;
+        padding: 2rem;
+        gap: 2rem;
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+        background-color: var(--blue);
+    }
+    .content > h3,
+    .content a {
+        color: white;
+    }
+    .content a {
+        text-decoration: none;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.5rem 0px;
+    }
+</style>

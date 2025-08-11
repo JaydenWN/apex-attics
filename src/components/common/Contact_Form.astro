@@ -1,0 +1,77 @@
+---
+import SendIcon from "@icons/send-white.svg";
+---
+
+<form action="">
+    <div class="input-area">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required autocomplete="name" />
+    </div>
+
+    <div class="input-area">
+        <label for="email">Email</label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="email"
+        />
+    </div>
+
+    <div class="input-area">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" required autocomplete="tel" />
+    </div>
+
+    <div class="input-area">
+        <label for="message">Message</label>
+        <textarea rows="12" name="message" id="message" required></textarea>
+    </div>
+
+    <button><SendIcon /> Send Message</button>
+</form>
+
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: var(--blue);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+    .input-area {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    input,
+    textarea {
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: "paragraph";
+        border-radius: 8px;
+        border: none;
+    }
+
+    button {
+        display: flex;
+        gap: 1rem;
+        border-radius: 8px;
+        border: 1px solid var(--orange);
+        font-family: "paragraph";
+        padding: 0.35rem 1.2rem 0.35rem 0.55rem;
+        color: white;
+        font-weight: 400;
+        text-decoration: none;
+        box-shadow: var(--box-shadow);
+        font-size: 1em;
+        align-items: center;
+        width: fit-content;
+        background-color: var(--orange);
+        margin-left: auto;
+    }
+</style>

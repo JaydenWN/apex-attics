@@ -1,0 +1,209 @@
+:root {
+	--orange: #F26722;
+	--blue: #034956;
+	--dark-blue: #01191E;
+	--box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+@font-face {
+	font-family: "paragraph";
+	src: url("/fonts/Chivo.ttf") format("truetype");
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "heading";
+	src: url("/fonts/Sora.ttf") format("truetype");
+	font-weight: 1000;
+	font-style: normal;
+	font-display: swap;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: "paragraph";
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "heading";
+	color: var(--blue)
+}
+h1 { font-size: 2em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.125em; }
+  h4 { font-size: 0.844em; }
+  h5 { font-size: 0.633em; }
+  
+p {
+	line-height: 1.65em;
+}
+.container {
+	padding: 2.5rem 1rem;
+}
+
+strong{
+	font-weight: bolder;
+}
+
+.section-dark{
+	background-color: #F6FAF7;
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 4.5rem 4rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		padding: 6rem 8rem;
+	}
+	h1 {
+	font-size: 2.8em;
+	}
+	h2 {
+		font-size: 2.441em;
+	}
+	h3 {
+		font-size: 1.953em;
+	}
+	h4 {
+		font-size: 1.563em;
+	}
+	h5 {
+		font-size: 1.25em;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		width: 1280px;
+		margin: 0px auto;
+	}
+}
