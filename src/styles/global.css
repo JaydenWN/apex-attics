@@ -205,5 +205,6 @@ strong{
 	.container {
 		width: 1280px;
 		margin: 0px auto;
+		box-sizing: border-box;
 	}
 }

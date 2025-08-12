@@ -1,0 +1,117 @@
+---
+import AboutAreas from "../components/About/About_Areas.astro";
+import AboutUs from "../components/About/About_Us.astro";
+import AboutWhat from "../components/About/About_What.astro";
+import AboutContact from "../components/About/About_Contact.astro";
+import AboutWhy from "../components/About/About_Why.astro";
+import SubHero from "../components/common/SubHero.astro";
+import Layout from "../layouts/Base_Layout.astro";
+---
+
+<Layout
+	title="About Central Coast Attic Storage Conversions | Local Family Business"
+	description="We are a trusted Central Coast business turning attics into valuable storage spaces. Learn about our experience, quality workmanship, and customer-focused approach."
+>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "AboutPage",
+			"name": "About Apex Attics | Central Coast Attic Storage Conversions",
+			"description": "Apex Attics is a trusted Central Coast business turning unused roof spaces into safe and accessible storage. Our family-run team delivers high-quality attic conversions, flooring, and ladder installations.",
+			"url": "https://www.apexattics.com/about-apex-attics",
+			"mainEntity": {
+				"@type": "LocalBusiness",
+				"name": "Apex Attics",
+				"description": "Apex Attics transforms unused roof spaces into safe, secure and accessible attic storage. Servicing the entire Central Coast region, we provide professional attic conversions, flooring, and ladder installations.",
+				"url": "https://www.apexattics.com",
+				"logo": "https://www.apexattics.com/attic-storage-conversion-experts.png",
+				"image": "https://www.apexattics.com/attic-storage-conversion-experts.png",
+				"telephone": "+61 424 808 378",
+				"email": "info@apexattics.com",
+				"priceRange": "$$",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "PLACEHOLDER STREET ADDRESS",
+					"addressLocality": "Central Coast",
+					"addressRegion": "NSW",
+					"postalCode": "2250",
+					"addressCountry": "AU"
+				},
+				"areaServed": [
+					"Gosford",
+					"Wyong",
+					"Terrigal",
+					"Avoca Beach",
+					"Copacabana",
+					"Bateau Bay",
+					"Long Jetty",
+					"The Entrance",
+					"Umina Beach",
+					"Woy Woy",
+					"Ettalong Beach",
+					"Patonga",
+					"Killcare",
+					"Noraville",
+					"Charmhaven",
+					"Lake Haven",
+					"Killarney Vale",
+					"Toukley",
+					"Budgewoi",
+					"Gwandalan",
+					"Summerland Point",
+					"Empire Bay",
+					"Green Point",
+					"Kincumber",
+					"Saratoga",
+					"Davistown",
+					"Pearl Beach",
+					"Forresters Beach",
+					"Shelly Beach",
+					"Norah Head",
+					"Blue Bay",
+					"Magenta",
+					"Ourimbah",
+					"Lisarow",
+					"Niagara Park",
+					"Narara",
+					"Springfield",
+					"Erina",
+					"Kariong"
+				],
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": [
+							"Monday",
+							"Tuesday",
+							"Wednesday",
+							"Thursday",
+							"Friday"
+						],
+						"opens": "07:00",
+						"closes": "17:00"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": "Saturday",
+						"opens": "08:00",
+						"closes": "14:00"
+					}
+				],
+				"sameAs": [
+					"https://www.facebook.com/apexattics-placeholder",
+					"https://www.instagram.com/apexattics-placeholder"
+				]
+			}
+		}
+	</script>
+	<SubHero
+		title="About Apex Attics, The Central Coast Attic Storage Specialists"
+		text="At Apex Attics, we help homeowners unlock the full potential of their roof space with safe, secure and functional attic storage conversions. Our team delivers honest advice, professional service and long-term value with every project. From free on-site assessments to same-day installations, we make attic storage simple, affordable and built to last."
+	/>
+	<AboutUs />
+	<AboutAreas />
+	<AboutWhy />
+	<AboutWhat />
+	<AboutContact />
+</Layout>

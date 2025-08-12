@@ -32,7 +32,9 @@ import Button from "../common/Button.astro";
                 through the process and help you create secure storage that
                 works for your home.
             </p>
-            <Button type="primary" href=""><MessageIcon /> Contact Us</Button>
+            <Button type="primary" href="/contact-apex-attics/#contact-form"
+                ><MessageIcon /> Contact Us</Button
+            >
         </div>
     </div>
 </section>
@@ -52,5 +54,27 @@ import Button from "../common/Button.astro";
         box-shadow: var(--box-shadow);
         color: white;
         background-color: var(--blue);
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        h2 {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            gap: 4rem;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .container {
+            column-gap: 6rem;
+        }
     }
 </style>

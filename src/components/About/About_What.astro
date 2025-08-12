@@ -91,4 +91,36 @@ import CheckmarkIcon from "@icons/checkmark-blue.svg";
         align-items: center;
         text-align: center;
     }
+
+    @media (min-width: 768px) {
+        .container {
+            gap: 4rem;
+        }
+        .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .card:last-of-type {
+            grid-area: 3 / 1 / 4 / 3;
+            width: 60%;
+            margin: 0px auto;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container > p {
+            max-width: 540px;
+            margin: 0px auto;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .list {
+            column-gap: 4rem;
+            row-gap: 6rem;
+        }
+        .card {
+            gap: 2rem;
+        }
+    }
 </style>

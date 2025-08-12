@@ -8,7 +8,9 @@ const { title, text, ctaText } = Astro.props;
 <div class="service-card">
     <h3>{title}</h3>
     <p>{text}</p>
-    <Button type="primary" href="/contact"><MessageIcon />Get a Quote</Button>
+    <Button type="primary" href="/contact-apex-attics/#contact-form"
+        ><MessageIcon />Get a Quote</Button
+    >
 </div>
 
 <style>
@@ -35,21 +37,20 @@ const { title, text, ctaText } = Astro.props;
         .text-content {
             padding: 2rem;
         }
+        .service-card > :global(a) {
+            margin-top: auto;
+        }
     }
 
     @media (min-width: 1024px) {
         .service-card {
-            flex-direction: row;
-            width: 100%;
-            max-width: 865px;
-            margin: 0px auto;
+            gap: 2rem;
+            padding: 2rem;
+            width: calc(50% - 1rem);
         }
         .image {
             height: auto;
             width: 45%;
-        }
-        .text-content {
-            padding: 3rem;
         }
     }
 </style>

@@ -26,13 +26,15 @@ import AbnIcon from "@icons/footer-abn.svg";
 						<a href="/">Home</a>
 					</li>
 					<li>
-						<a href="/">Services</a>
+						<a href="/attic-conversion-process"
+							>Attic Storage Conversions</a
+						>
 					</li>
 					<li>
-						<a href="/">About</a>
+						<a href="/about-apex-attics">About Apex Attics</a>
 					</li>
 					<li>
-						<a href="/">Contact</a>
+						<a href="/contact-apex-attics">Contact Apex Attics</a>
 					</li>
 				</ul>
 			</div>
@@ -41,10 +43,14 @@ import AbnIcon from "@icons/footer-abn.svg";
 				<h3>Social Links</h3>
 				<ul>
 					<li>
-						<a href="/"><FacebookIcon class="icon" />Facebook</a>
+						<a href="http://www.facebook.com/"
+							><FacebookIcon class="icon" />Facebook</a
+						>
 					</li>
 					<li>
-						<a href="/"><InstagramIcon class="icon" />Instagram</a>
+						<a href="http://www.instagram.com/"
+							><InstagramIcon class="icon" />Instagram</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -54,7 +60,7 @@ import AbnIcon from "@icons/footer-abn.svg";
 				<ul>
 					<li>
 						<a href="mailto:"
-							><MailIcon class="icon" />Mail@emailchamp.com</a
+							><MailIcon class="icon" />info@apexattics.com</a
 						>
 					</li>
 					<li>
@@ -143,32 +149,22 @@ import AbnIcon from "@icons/footer-abn.svg";
 		.footer-container {
 			padding: 4rem 4rem 1rem 4rem;
 		}
-		.site-nav {
-			grid-area: site-nav;
-		}
-		.social-links {
-			grid-area: social;
-		}
-		.contact-details {
-			grid-area: contact;
-		}
 		.links {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-template-areas:
-				"site-nav social"
-				"contact contact";
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 	@media (min-width: 1024px) {
 		.links {
 			grid-template-columns: 250px 250px 250px;
-			grid-template-areas: "site-nav social contact";
 			margin-top: 2rem;
 		}
-		.contact-details a:first-of-type {
-			margin-bottom: 1rem;
-			display: block;
+		.links a {
+			transition: all 0.25s;
+		}
+		.links a:hover {
+			opacity: 1;
+			padding-left: 0.5rem;
 		}
 	}
 </style>

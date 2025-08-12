@@ -10,8 +10,12 @@ import MessageIcon from "@icons/contact-white.svg";
         <h1>{title}</h1>
         <p>{text}</p>
         <div class="cta-buttons">
-            <Button type="secondary" href="/"><PhoneIcon /> Call Us</Button>
-            <Button type="primary" href="/"><MessageIcon /> Get a quote</Button>
+            <Button type="secondary" href="tel:0424 808 378"
+                ><PhoneIcon /> Call Us</Button
+            >
+            <Button type="primary" href="/contact-apex-attics/#contact-form"
+                ><MessageIcon /> Get a quote</Button
+            >
         </div>
     </div>
 </header>
@@ -35,5 +39,27 @@ import MessageIcon from "@icons/contact-white.svg";
     }
     h1 {
         color: white;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            gap: 3rem;
+            width: 68%;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            width: 60%;
+        }
+    }
+    @media (min-width: 1440px) {
+        .container {
+            width: 1280px;
+        }
+        .container > h1,
+        .container > p {
+            width: 70%;
+        }
     }
 </style>

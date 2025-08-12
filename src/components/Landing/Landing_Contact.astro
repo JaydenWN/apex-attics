@@ -4,11 +4,8 @@ import ContactForm from "../common/Contact_Form.astro";
 
 <section>
     <div class="container">
-        <div class="contact-head">
-            <h2>
-                Get in Touch with the Central Coast Attic Storage Specialists
-            </h2>
-        </div>
+        <h2>Get in Touch with the Central Coast Attic Storage Specialists</h2>
+
         <div class="form">
             <ContactForm />
         </div>
@@ -63,31 +60,25 @@ import ContactForm from "../common/Contact_Form.astro";
     }
 
     @media (min-width: 768px) {
-        .contact-head {
-            grid-area: contact-head;
+        h2 {
+            grid-area: 1 / 1 / 2 / 3;
         }
         .form {
-            grid-area: form;
         }
         .contact-information {
-            grid-area: info;
+            margin-top: 1rem;
         }
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas:
-                "contact-head form"
-                "info form";
-            gap: 1rem;
+            grid-template-columns: 1fr 0.8fr;
+            row-gap: 4rem;
         }
     }
 
     @media (min-width: 1024px) {
         .container {
-            gap: 6rem;
-        }
-        .form {
-            max-width: 440px;
+            row-gap: 6rem;
+            column-gap: 4rem;
         }
     }
 </style>

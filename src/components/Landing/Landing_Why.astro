@@ -17,10 +17,10 @@ import checkmark from "@icons/checkmark-blue.svg";
                 stress-free.
             </p>
             <div class="cta-buttons">
-                <Button type="secondary-dark" href="/"
+                <Button type="secondary-dark" href="tel:0424 808 378"
                     ><PhoneIcon /> Call Us</Button
                 >
-                <Button type="primary" href="/"
+                <Button type="primary" href="/contact-apex-attics/#contact-form"
                     ><MessageIcon /> Get a quote</Button
                 >
             </div>
@@ -85,9 +85,7 @@ import checkmark from "@icons/checkmark-blue.svg";
         flex-direction: column;
         gap: 1rem;
     }
-    h2 {
-        font-size: 1.65em;
-    }
+
     .why-header {
         display: flex;
         flex-direction: column;
@@ -119,31 +117,42 @@ import checkmark from "@icons/checkmark-blue.svg";
     }
 
     @media (min-width: 768px) {
+        .why-header {
+            gap: 3rem;
+            text-align: center;
+        }
+        .cta-buttons {
+            margin: 0px auto;
+        }
         .reason {
-            width: calc(50% - 2rem);
+            width: calc(50% - 0.5rem);
             box-sizing: border-box;
+            padding: 1rem;
+            box-shadow: var(--box-shadow);
+            background-color: white;
+            border-radius: 8px;
+            text-align: left;
+            gap: 1.6rem;
         }
         .reasons {
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 4rem;
+            gap: 1rem;
         }
     }
 
     @media (min-width: 1024px) {
         .container {
-            display: grid;
-            grid-template-columns: 0.65fr 1fr;
-            grid-template-areas: "why-header reasons";
-            gap: 3rem;
         }
         .why-header {
-            grid-area: why-header;
         }
         .reasons {
-            grid-area: reasons;
-            gap: 4rem;
-            margin-top: 0px;
+            gap: 2rem;
+        }
+        .reason {
+            padding: 2rem;
+            width: calc(50% - 1rem);
+            text-align: center;
         }
     }
 </style>

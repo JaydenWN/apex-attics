@@ -11,7 +11,7 @@ import MessageIcon from "@icons/contact-white.svg";
         <div class="list">
             <div class="card">
                 <div class="card-head">
-                    <LocationPin />
+                    <LocationPin class="icon" />
                     <h3>Central Coast</h3>
                 </div>
                 <p>
@@ -23,7 +23,7 @@ import MessageIcon from "@icons/contact-white.svg";
 
             <div class="card">
                 <div class="card-head">
-                    <LocationPin />
+                    <LocationPin class="icon" />
                     <h3>Sydney</h3>
                 </div>
                 <p>
@@ -33,7 +33,7 @@ import MessageIcon from "@icons/contact-white.svg";
 
             <div class="card">
                 <div class="card-head">
-                    <LocationPin />
+                    <LocationPin class="icon" />
                     <h3>Southern Sydney</h3>
                 </div>
                 <p>
@@ -44,7 +44,7 @@ import MessageIcon from "@icons/contact-white.svg";
 
             <div class="card">
                 <div class="card-head">
-                    <LocationPin />
+                    <LocationPin class="icon" />
                     <h3>Western Sydney</h3>
                 </div>
                 <p>
@@ -55,7 +55,7 @@ import MessageIcon from "@icons/contact-white.svg";
 
             <div class="card">
                 <div class="card-head">
-                    <LocationPin />
+                    <LocationPin class="icon" />
                     <h3>Newcastle & Lake Macquarie</h3>
                 </div>
                 <p>
@@ -67,7 +67,7 @@ import MessageIcon from "@icons/contact-white.svg";
 
             <div class="card">
                 <div class="card-head">
-                    <LocationPin />
+                    <LocationPin class="icon" />
                     <h3>Wollongong & Illawarra</h3>
                 </div>
                 <p>
@@ -84,10 +84,10 @@ import MessageIcon from "@icons/contact-white.svg";
                 project.
             </p>
             <div class="cta-buttons">
-                <Button type="secondary-dark" href="/"
+                <Button type="secondary-dark" href="tel:0424 808 378"
                     ><PhoneIcon /> Call Us</Button
                 >
-                <Button type="primary" href="/"
+                <Button type="primary" href="/contact-apex-attics/#contact-form"
                     ><MessageIcon /> Get a quote</Button
                 >
             </div>
@@ -129,5 +129,43 @@ import MessageIcon from "@icons/contact-white.svg";
     .cta-buttons {
         display: flex;
         gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        h2 {
+            text-align: center;
+        }
+        .container {
+            gap: 4rem;
+        }
+        .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .cta {
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            border: 2px solid white;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .card {
+            padding: 2rem;
+            gap: 2rem;
+        }
+        .icon {
+            min-width: 30px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .container {
+            gap: 6rem;
+        }
+        .cta {
+            width: 60%;
+        }
     }
 </style>

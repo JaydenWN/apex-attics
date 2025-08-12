@@ -55,9 +55,22 @@ const { whyObject } = Astro.props;
         height: 16px;
     }
 
+    @media (min-width: 768px) {
+        details {
+            padding: 2rem;
+        }
+    }
+
     @media (min-width: 1024px) {
         details {
             cursor: pointer;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        details {
+            width: 60%;
+            margin: 0px auto;
         }
     }
 </style>

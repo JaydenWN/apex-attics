@@ -2,8 +2,8 @@
 import ContactForm from "../common/Contact_Form.astro";
 ---
 
-<section class="section-dark">
-    <div class="container">
+<section class="section-dark" id="contact-form">
+    <div class="container contact">
         <h2>Get in Touch with Apex Attics</h2>
         <ContactForm />
     </div>
@@ -14,5 +14,26 @@ import ContactForm from "../common/Contact_Form.astro";
         display: flex;
         flex-direction: column;
         gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        .contact > :global(form) {
+            width: 75%;
+            margin: 0px auto;
+        }
+        .container {
+            gap: 4rem;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .contact > :global(form) {
+            width: 60%;
+            margin: 0px auto;
+            padding: 2rem;
+        }
     }
 </style>

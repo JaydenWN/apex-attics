@@ -116,4 +116,24 @@ import ClockIcon from "@icons/clock-orange.svg";
         gap: 2rem;
         margin-top: 4rem;
     }
+
+    @media (min-width: 768px) {
+        .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 2rem;
+        }
+        .hours {
+            margin-top: 6rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container > p {
+            max-width: 580px;
+        }
+        .container {
+            gap: 4rem;
+        }
+    }
 </style>

@@ -1,0 +1,89 @@
+---
+import SubHero from "../components/common/SubHero.astro";
+import Layout from "../layouts/Base_Layout.astro";
+import ServicesIncluded from "../components/Services/Services_Included.astro";
+import ServicesHow from "../components/Services/Services_How.astro";
+import ServicesWhy from "../components/Services/Services_Why.astro";
+import ServicesWhyAttic from "../components/Services/Services_Why_Attic.astro";
+import ServicesContact from "../components/Services/Services_Contact.astro";
+---
+
+<Layout
+    title="How We Convert Your Attic | Apex Attics Central Coast"
+    description="See how our attic conversion process works from start to finish. Apex Attics delivers safe, strong and professional attic storage spaces across the Central Coast."
+>
+    <script type="application/ld+json" slot="head">
+        {
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How We Convert Your Attic into Safe Storage | Apex Attics",
+            "description": "Our step-by-step attic conversion process ensures your new storage space is safe, accessible and built to last. Apex Attics serves the Central Coast region with professional attic conversions and ladder installations.",
+            "image": "https://www.apexattics.com/attic-storage-conversion-experts.png",
+            "totalTime": "P5D",
+            "supply": [
+                {
+                    "@type": "HowToSupply",
+                    "name": "Attic ladder"
+                },
+                {
+                    "@type": "HowToSupply",
+                    "name": "Flooring panels"
+                },
+                {
+                    "@type": "HowToSupply",
+                    "name": "Safety rails"
+                }
+            ],
+            "tool": [
+                {
+                    "@type": "HowToTool",
+                    "name": "Power drill"
+                },
+                {
+                    "@type": "HowToTool",
+                    "name": "Measuring tape"
+                },
+                {
+                    "@type": "HowToTool",
+                    "name": "Circular saw"
+                }
+            ],
+            "step": [
+                {
+                    "@type": "HowToStep",
+                    "name": "Initial Consultation",
+                    "text": "We visit your home to assess the attic space, discuss your needs, and provide a detailed quote for the conversion."
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "Ladder Installation",
+                    "text": "We install a sturdy, easy-to-use attic ladder to ensure safe access to your new storage area."
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "Flooring Installation",
+                    "text": "We lay durable flooring panels to create a strong, stable surface for storage."
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "Safety Additions",
+                    "text": "We install safety rails and other protective features to make the space secure and compliant."
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "Final Walkthrough",
+                    "text": "We show you how to safely access and use your new attic storage, and answer any questions."
+                }
+            ]
+        }
+    </script>
+    <SubHero
+        title="Attic Storage Conversions for Central Coast Homes"
+        text="Our attic storage service is a complete, all-in-one solution designed to make the most of your space. We handle everything from access to installation, so you don’t have to lift a finger."
+    />
+    <ServicesIncluded />
+    <ServicesHow />
+    <ServicesWhy />
+    <ServicesWhyAttic />
+    <ServicesContact />
+</Layout>
